@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class BookmarksController < ApplicationController
   def new
     @list = List.find(params[:list_id])
