@@ -1,10 +1,12 @@
-<h1>My lists</h1>
-  <ul>
-  <% @lists.each do |list| %>
-    <li>
-      <%= link_to "#{list.name}", list_path(list) %>
-    </li>
-    <% end %>
-  </ul>
+<h1 class = "title text-center m-5"><strong>MY LISTS</strong></h1>
 
-<%= link_to "+ Add a list", new_list_path %>
+  <div class="cards">
+    <% @lists.each do |list| %>
+
+    <div class="card-category m-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ86qW9LTxHwVRDbRLMiWm2jLkebS3HSRT4g&usqp=CAU)">
+      <%=link_to "#{list.name}", list_path(list), class: "link-list" %>
+    </div>
+    <% end %>
+  </div>
+
+<%= link_to "+ Add a list", new_list_path, class: "link-list btn btn-danger m-5"%>

@@ -1,0 +1,40 @@
+.title {
+  color: red;
+}
+
+.link-list {
+  color: white;
+  text-decoration: none;
+}
+
+.link-list:hover {
+  color: yellow;
+}
+
+.sous-titre{
+  font-size: 25px;
+}
+
+.overview{
+  font-size: 12px;
+}
+
+.comment{
+  font-size: 16px;
+}
+
+.card-link{
+    background-color: rgb(218, 85, 85);
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 10px;
+}
+
+.card-text{
+  font-size: 12px;
+}
